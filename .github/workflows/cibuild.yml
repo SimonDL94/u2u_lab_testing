@@ -5,7 +5,11 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+  workflow_dispatch:
+    inputs:
+      configuration:
+        type: choice
+        options: [debug, release]
 jobs:
   build:
     runs-on: ubuntu-latest
