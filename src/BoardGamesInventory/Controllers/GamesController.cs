@@ -91,8 +91,7 @@ namespace BoardGamesInventory.Controllers
       {
         Id = game.Id,
         Name = game.Name,
-        Price = game.Price.Amount,
-        PublisherId = game.Publisher.Id,
+        // Price = game.Price.Amount,
         Publishers = db.Publishers.ToList()
       };
 
